@@ -41,7 +41,7 @@ static CGFloat cellHeight = 0;
 
     cellHeight =  height + 5;
     
-    
+    _commentModel.height = cellHeight;
 }
 #pragma mark---动态高度---
 -(CGSize)stringSizeWithFont:(UIFont *)font string:(NSString *)string width:(CGFloat)width

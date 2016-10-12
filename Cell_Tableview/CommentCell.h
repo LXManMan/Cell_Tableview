@@ -12,5 +12,6 @@
 @interface CommentCell : UITableViewCell
 @property(nonatomic,strong)CommentModel *commentModel;
 @property(nonatomic,strong)UILabel *commentLabel;
+
 +(CGFloat)cellHeight;
 @end

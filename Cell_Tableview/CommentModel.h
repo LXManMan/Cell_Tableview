@@ -11,4 +11,5 @@
 @interface CommentModel : NSObject
 
 @property(nonatomic,strong)NSString *message;
+@property(nonatomic,assign)float height;
 @end

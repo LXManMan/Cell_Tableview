@@ -10,7 +10,7 @@
 #import "CommentModel.h"
 #import "CommentCell.h"
 @interface DetailCell()<UITableViewDelegate,UITableViewDataSource>
-@property(nonatomic,strong)UITableView *commentTableview;
+
 @property(nonatomic,strong)UILabel *nameLabel;
 @property(nonatomic,strong)UILabel *messageLabel;
 @end
@@ -85,14 +85,17 @@ static CGFloat cellHeight = 40;
    
     
     cell.commentModel = self.detailmodel.commentArray[indexPath.row];
-    cell.backgroundColor =[UIColor brownColor];
+   
+    cell.backgroundColor = [UIColor grayColor];;
     return cell;
     
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
 
-    
+    if (self.sendClick) {
+        self.sendClick(self.index,indexPath.row);
+    }
 }
 
 
