@@ -1,0 +1,19 @@
+//
+//  Cell_tableview.pch
+//  Cell_Tableview
+//
+//  Created by chuanglong02 on 16/10/10.
+//  Copyright © 2016年 漫漫. All rights reserved.
+//
+
+#ifndef Cell_tableview_pch
+#define Cell_tableview_pch
+
+#define DeviceH [[UIScreen mainScreen]bounds].size.height
+#define DeviceW [[UIScreen mainScreen]bounds].size.width
+#define LBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define LBRandomColor LBColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Cell_tableview_pch */
